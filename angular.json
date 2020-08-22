@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Amz-online-shop": {
+    "amz-online-shop-frontend": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Amz-online-shop",
+            "outputPath": "dist/amz-online-shop-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,11 +27,10 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/bootstrap.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.scss"
             ],
-            "scripts": [],
-            "es5BrowserSupport": true
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -63,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Amz-online-shop:build"
+            "browserTarget": "amz-online-shop-frontend:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Amz-online-shop:build:production"
+              "browserTarget": "amz-online-shop-frontend:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Amz-online-shop:build"
+            "browserTarget": "amz-online-shop-frontend:build"
           }
         },
         "test": {
@@ -108,7 +107,7 @@
         }
       }
     },
-    "Amz-online-shop-e2e": {
+    "amz-online-shop-frontend-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -117,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Amz-online-shop:serve"
+            "devServerTarget": "amz-online-shop-frontend:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Amz-online-shop:serve:production"
+              "devServerTarget": "amz-online-shop-frontend:production"
             }
           }
         },
@@ -137,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "Amz-online-shop"
+  "defaultProject": "amz-online-shop-frontend"
 }
