@@ -1,0 +1,4 @@
+- Login Formular erstellen und Login speichern (Local storage?)
+- Dashboard bzw. Produktübersicht
+- Produktseite
+- Warenkorb
